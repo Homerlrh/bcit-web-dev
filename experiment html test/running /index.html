@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>assignment 4</title>
+		<meta charset="utf-8">
+		<style>
+		body{background-image:url("image/0001.jpg");background-repeat: no-repeat;background-position: center;}
+			.a{border: 2px solid #000000; position:relative;}
+			.v1{position:absolute;border-left:6px solid #000000;height:450px;left:160px;top:80px;}
+			.v2{position:absolute;border-right:6px solid #000000;height:450px;left:1180px;top:80px;}
+			#b1{border:2px solid #000000;width:100px;height:50px;text-align:center;position:absolute;left:20px;}
+			#b2{border:2px solid #000000;width:100px;height:70px;text-align:center;position:absolute;left:20px;top:250px;}
+			#b3{border:2px solid #000000;width:100px;height:50px;text-align:center;position:absolute;left:20px;bottom:210px;}
+			.b4{border:2px solid #000000;width:100px;height:50px;text-align:center;margin-left:100px;margin-top:480px;margin-bottom:50px;}
+		</style>
+</head>
+<body>
+	<div class="a">
+	 	<p style="margin-left:125px;font-size:2em;float:left">start:</p> 
+	 	<p style="margin-left:1150px;font-size:2em;">End:</p>
+	 	<div id="b1">Turtle</div>
+	 	<div id="b2"><img src="image/2.jpg" alt="pic"></div>
+	 	<div id="b3">Rabbit</div>
+	 	<div class="b4"><button onclick="myMove()">Click Me</button></div>
+	 	<div class="v1"></div>
+		<div class="v2"></div>
+	</div>
+		<script>
+			function myMove()
+			{
+  				var elem = document.getElementById("b1");
+  				var elem2 = document.getElementById("b2");
+  				var elem3 = document.getElementById("b3");
+  				var pos = 0;
+  				var pos2= 0;
+  				var pos3= 0;
+  				var speed_a = Math.floor((Math.random() * 10) + 1);
+  				var speed_b = Math.floor((Math.random() * 10) + 1);
+  				var speed_c = Math.floor((Math.random() * 10) + 1);
+  				var id = setInterval(frame_a,10);
+  				var id2= setInterval(frame_b,10);
+  				var id3= setInterval(frame_c,10);
+  				function frame_a() 
+  				{
+    				if (pos > 1180)
+    				{
+    					alert("Turtle win the game");
+      					clearInterval(id);
+      					clearInterval(id2);
+      					clearInterval(id3);
+    				}
+    				else
+    				{
+    					pos=pos+speed_a;
+      					elem.style.left = pos + "px";	
+    				}
+ 				};
+ 				
+ 				function frame_b()
+ 				{
+ 					if(pos2 > 1180)
+ 					{
+ 						alert("you win the game");
+ 						clearInterval(id);
+      					clearInterval(id2);
+      					clearInterval(id3);
+ 					}
+ 					else
+ 					{
+ 						pos2= pos2+ speed_b;
+ 						elem2.style.left=pos2+"px";
+ 					}
+ 				};
+ 				
+ 				function frame_c()
+ 				{
+ 					if(pos3 > 1180)
+ 					{
+ 						alert("Rabbit win the game");
+ 						clearInterval(id);
+      					clearInterval(id2);
+      					clearInterval(id3);
+ 					}
+ 					else
+ 					{
+ 						pos3= pos3+ speed_c;
+ 						elem3.style.left=pos3+"px";
+ 					}
+ 				};
+ 		
+ 			}
+		</script>
+</body>
+</html>

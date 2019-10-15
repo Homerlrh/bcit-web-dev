@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d5f4e6;
+}
+
+.page-header {
+  width: 100%;
+  background-color: #80ced6;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+.page-header h1 {
+  margin: 0;
+}
+.squeak-message {
+  font-size: 30px;
+}
+
+.squeak {
+  background-color: #fefbd8;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #618685;
+  margin: 20px 0;
+}
+
+.main-content, .squeak-form {
+  width: 600px;
+  margin: auto;
+}
+
+.main-content {
+  margin: auto auto 200px auto;
+}
+
+.squeak-form-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #618685;
+  padding: 20px 0;
+}
+
+.squeak-form input, .squeak-form button {
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  box-sizing: border-box;
+}

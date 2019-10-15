@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript Practice</title>
+<meta charset="utf-8">
+	<style>
+	body{background-color:#90EE90;}
+	.b{border:5px solid #000000;width:850px;height:670px;}
+	.b1{border:5px solid #000000;width:200px;height:200px;float:left;margin-top:10px;margin-left:10px;text-align:center;}
+	.b2{border:5px solid #000000;width:450px;height:200px;float:left;margin-left:10px;margin-top:10px;}
+	.b3{border:5px solid #000000;width:670px;height:200px;float:left;margin-left:10px;margin-top:10px;}
+	.b4{border:5px solid #000000;background-color:#F0F8FF;width:130px;height:80px;float:left;margin-top:10px;margin-left:10px;border-radius: 25px;}
+	
+	.b5{border:5px solid #000000;background-color:#F0F8FF;width:300px;height:60px;border-radius: 25px;position:relative;top:-50px;left:360px;}
+	.A {
+		font-family: Impact, Charcoal, sans-serif;
+		font-size:25px;
+		color:#000080;
+	}
+
+	.B {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:15px;
+		color:#FF7F50;
+	}
+	
+	.square {
+		display:none;
+		height: 150px;
+		width: 150px;
+		background-color: #555;
+		float:right;
+		margin-right:10px;
+		margin-top:10px;
+	}
+	
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#name").click(function(){
+			var div = $("#p1"); 
+			div.animate({fontSize: '3em'}, "slow");
+		});
+	});
+	$(document).ready(function(){
+		$(".bt").click(function(){
+			$("polygon").toggle();
+		});
+	});
+	$(document).ready(function(){
+		$(".bt1").click(function(){
+			$(".square").toggle();
+		});
+	});
+	$(document).ready(function(){
+		$(".bt2").click(function(){
+			$("circle").toggle();
+		});
+	});
+	$(document).ready(function(){
+		$(".hide").click(function(){
+			$("circle").hide();
+			$(".square").hide();
+			$("polygon").hide();
+		});
+	});
+	$(document).ready(function(){
+		$(".show").click(function(){
+			$("circle").show();
+			$(".square").show();
+			$("polygon").show();
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="b">
+	<div class="b1">
+			<p id="p1">ruihao li</p>
+			<p>802342</p>
+			<button id="name">click to view name animation</button>	
+	</div>
+	
+	<div class="b2">
+	<div style="border-bottom:5px solid #000000; width:450px; height:17px;">
+		<button class="bt">draw polygon</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button class="bt2">draw circle</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button class="bt1">draw square</button>
+	</div>
+
+	<svg height="200" width="270">
+  		<polygon 
+				points="66.5,15  15,160 130,66.67 3,66.67 115,160" 
+  				style="fill:#F08080;
+  				stroke:#000000;
+  				stroke-width:5;
+  				fill-rule:evenodd;
+  				display:none;
+  				"/>
+			<circle
+				cx="200" cy="80" r="50"
+  				style="fill:#7CFC00;
+  				stroke:#B22222;
+  				stroke-width:5;
+  				display:none;
+  				"/>		
+	</svg>
+		<div class="square"></div>
+
+	</div>
+	
+	<div class="b4">
+		<button class="hide" style="margin-left:2px;margin-top:10px;border-radius:25px;padding:20px 48px;">Hide</button>
+	</div>
+	
+	<div class="b4">
+		<button class="show" style="margin-left:2px;margin-top:10px;border-radius:25px;padding:20px 48px;">show</button>
+	</div>
+	
+	<div class="b3">
+		<video width="320" height="190" controls style="margin-left:200px">
+			<source src="movie.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	<div class="b3">
+	<pre class="A">Name:	Ruihao li</pre>
+	<pre class="B">English Name:	Homer</pre>
+	<pre class="A">School:	Columbia College</pre>
+
+		<div class="b5">
+			<audio controls>
+				<source src="voice.mp3" type="audio/mpeg">
+			</audio> 
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
