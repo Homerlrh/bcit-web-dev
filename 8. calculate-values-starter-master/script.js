@@ -24,7 +24,6 @@ EnterInput.addEventListener("click" , function() {
     } else {
       list.push(item);
       list.push(num[i]);
-      list.push(num[i+1]);
       item = "";
    }
   }
@@ -36,11 +35,11 @@ EnterInput.addEventListener("click" , function() {
     if(isNaN(list[j]) === true){
       if(list[j] == "+") {
         sum += Number(list[j+1]);
-        j = j + 2;
+        //j = j + 2;
       }
       if(list[j] == "-") {
         sum -= Number(list[j+1]);
-        j = j + 2;
+        //j = j + 2;
       }
     }
   }
