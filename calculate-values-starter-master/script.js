@@ -16,35 +16,38 @@ buttons.forEach(button => {
 EnterInput.addEventListener('click' , function() {
   
   var num = inputElement.innerText;
-
+  var item = "";
   var a = [];
-  let op;
-
- for (let i of num) {
-
-   if(i == '+'){
-     op = i;
-     a = num.split(op);
+ 
+  for (let i = 0 ; i < num.length ; i++) {
+    if(num[i] != "+" && num[i] != "-"){
+      item += num[i];
+    } else {
+      a.push(item);
     }
-
-    if(i == '-'){
-      op = i ; 
-      a = num.split(op);
-    }
+    
   }
 
-  if(op == '+'){
-    for( let j of a ) {
-      sum += Number(j);
+  console.log(a);
+
+  sum = Number(a[0]);
+  for (let j = 0 ; j < a.length ; j++) {    
+    if(isNaN(a[j]) === true){
+      if(a[j] == "+") {
+        sum += Number(a[j+1]);
+        j = j + 2;
+      }
+      if(a[j] == "-") {
+        sum -= Number(a[j+1]);
+        j = j + 2;
+      }
     }
-  }
 
-  if(op == '-'){
-    for( j of a ){
-      sum -= Number(j);
-   }
-  }
+    // if(a[j] == "-"){continue;}
+    // sum -= Number(a[j]);
 
+  }
+  console.log(sum);
   answerElement.innerText = sum;
   inputElement.innerText = '';
   //if(!isNaN(parseInt(num))){}
