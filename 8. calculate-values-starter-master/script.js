@@ -45,6 +45,7 @@ EnterInput.addEventListener("click" , function() {
   }
   console.log(sum);
   answerElement.innerText = sum;
+  inputElement.innerText = "";
   sum = 0;
   list = [];
 })
@@ -53,5 +54,4 @@ user_reset.addEventListener("click" , function(){
   list = [];
   sum = 0;
   answerElement.innerText = 0;
-  inputElement.innerText = "";
 })
