@@ -1,0 +1,88 @@
+.main_content{
+  margin: 0;
+}
+.header {
+  background-color: lightgray;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.navbox {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.singer {
+  font-family: "Liu Jian Mao Cao", cursive;
+}
+.navbar {
+  color: black;
+  text-decoration-style: none;
+}
+.navbar:nth-last-child(2){
+  margin: 20px;
+}
+.album {
+  margin-top: 20px;
+  margin-bottom: 90px;
+  margin-left:auto;
+  margin-right: auto;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.album-name {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  font-family: "Anton", sans-serif;
+}
+.album-img {
+  height: 250px;
+  width: 250px;
+  margin-right: 20px;
+}
+.all-tracks {
+  margin-top: 30px;
+  font-family: "Bitter", serif;
+}
+
+.track {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  border-bottom: 2px solid #000000;
+  justify-content: space-between;
+}
+.track-name {
+  display: flex;
+  align-items: center;
+}
+.track-detail {
+  display: flex;
+  align-items: center;
+}
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: lightgray;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.play {
+  width: 100%;
+  height: 100px;
+}
