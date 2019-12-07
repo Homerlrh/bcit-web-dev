@@ -1,0 +1,20 @@
+#pad {
+  width: 99%;
+  height: 500px;
+  border-radius: 2em;
+  border: 5px solid #000000;
+  margin: auto;
+}
+
+#clear {
+  outline: none;
+  width: 99%;
+  border: 2px solid #000000;
+  border-radius: 0.5em;
+  font-size: 50px;
+}
+
+#clear:hover {
+  background-color: pink;
+  cursor: pointer;
+}
