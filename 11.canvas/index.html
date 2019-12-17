@@ -8,8 +8,20 @@
     <title>Document</title>
   </head>
   <body>
-    <canvas id="pad"></canvas>
+    <canvas id="pad" width="500" height="500"></canvas>
+    <br />
     <button id="clear">clear</button>
+    <br />
+    Pick a color: &nbsp;<input type="color" value="#e66465" id="color" />
+    <br />
+    change size: &nbsp;<input
+      type="range"
+      min="1"
+      max="100"
+      value="10"
+      id="range"
+    />
+    <p class="size"></p>
     <script src="./scipt.js"></script>
   </body>
 </html>

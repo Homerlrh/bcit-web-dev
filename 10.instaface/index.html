@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InstaFace</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Copse|Niconne|Righteous|Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="main-content">
+    <header class="app_name">
+      <div class="brandname">
+        <h1>InstaFace</h1>
+        <button class="show material-icons">folder_open</button>
+
+      </div>
+    </header>
+
+    <main class="postpage">
+      <div class="control-div" id="all-post">
+    </main>
+
+    <footer class="Inputform">
+      <div class="postform">
+        <form id="new-post" class="new-post" autocomplete="off">
+          <input type="text" id="name" placeholder="    Username" required/>
+          <input type="text" id="imgURL" placeholder="  Img URL" required/>
+          <input type="text" id="comment" placeholder=" Comment" required/>
+          <button class="postbutton">post</button>
+        </form>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

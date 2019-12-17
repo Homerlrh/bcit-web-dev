@@ -1,5 +1,5 @@
 #pad {
-  width: 99%;
+  width: 500px;
   height: 500px;
   border-radius: 2em;
   border: 5px solid #000000;
@@ -8,7 +8,7 @@
 
 #clear {
   outline: none;
-  width: 99%;
+  width: 500px;
   border: 2px solid #000000;
   border-radius: 0.5em;
   font-size: 50px;
@@ -17,4 +17,8 @@
 #clear:hover {
   background-color: pink;
   cursor: pointer;
+}
+
+.canvasss {
+  width: 100%;
 }

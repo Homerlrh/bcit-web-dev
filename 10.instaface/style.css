@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.main-content {
+  background-color: #778899;
+}
+
+.app_name {
+  background: #272727;
+  border-bottom: 1px solid #ffffff;
+}
+
+.show {
+  outline: none;
+  position: fixed;
+  right: 3px;
+  visibility: hidden;
+  color: #ffffff;
+}
+
+.brandname {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  color: #ffffff;
+  font-family: "Righteous", cursive;
+  cursor: pointer;
+}
+
+.brandname h1 {
+  font-size: 2vw;
+}
+
+/* basic css for post page making */
+.postpage {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.control-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 400px));
+  justify-content: space-between;
+}
+.singlepost {
+  max-width: 400px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightslategrey;
+}
+
+/* name bar */
+.nameheader {
+  width: 100%;
+  border-bottom: 1px solid lightslategray;
+}
+.username {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  font-family: "Staatliches", cursive;
+}
+.post_username {
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+.socialmedia_icon {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.material-icons:nth-child(2) {
+  margin: 20px;
+}
+
+/* post image happen here */
+.img_space {
+  margin: 0;
+  border-bottom: 1px solid lightslategrey;
+}
+.IMGpost {
+  width: 100%;
+  border-bottom: 1px solid lightslategrey;
+}
+.caption {
+  width: 100%;
+  margin-top: 0;
+}
+.IMGcaption {
+  overflow: auto;
+  width: 90%;
+  margin: auto;
+  font-size: 1.4vw;
+  padding: 15px 0px;
+  font-family: "Copse", serif;
+}
+
+/* follwers comments */
+.usercomment {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  overflow-y: scroll;
+  border-bottom: 1px solid lightslategrey;
+}
+.usercomment:last-of-type {
+  border-bottom: none;
+}
+.comment_review {
+  width: 100%;
+}
+.comments {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.comment_text {
+  font-family: "Copse", serif;
+  font-size: 1.3vw;
+  margin: 0 0 0 10px;
+}
+
+/* submission area for user to input comment */
+.submission_area {
+  padding: 0 25px;
+  display: flex;
+  overflow: auto;
+  border-top: 1px solid lightslategrey;
+}
+.comment-form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.comment-input {
+  resize: none;
+  flex-grow: 10;
+  padding: 15px;
+  font-size: 1.5vw;
+  border: none;
+  outline: none;
+  text-rendering: auto;
+}
+.postcomments {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5vw;
+}
+
+/* this is the footer area where the posting mechanism happens */
+.Inputform {
+  left: 0;
+  bottom: 0;
+  background-color: #272727;
+  color: white;
+  position: sticky;
+  border-top: 1px solid #ffffff;
+}
+.postform {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  flex-direction: column;
+  margin: auto;
+  max-width: 70%;
+}
+.new-post input:nth-child(2) {
+  margin: 15px;
+}
+
+.new-post button {
+  margin-left: 20px;
+  padding: 0;
+}
+
+.new-post input {
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 15px;
+  height: 40px;
+  width: 29%;
+}
+.postbutton {
+  border-style: none;
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  cursor: hand;
+  font-size: 1.2rem;
+}
+
+.fa:hover {
+  color: red;
+}
+
+.colorred {
+  color: red;
+}
+
+@media only screen and (max-width: 1143px) {
+  .postpage {
+    margin: auto;
+  }
+  .singlepost .app_name {
+    width: 600px;
+  }
+  .control-div {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .postpage {
+    margin: auto;
+  }
+  .singlepost .app_name {
+    width: 100%;
+  }
+  .control-div {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .postpage {
+    margin: auto;
+  }
+  .singlepost .app_name {
+    width: 100%;
+  }
+  .control-div {
+    display: block;
+  }
+  .Inputform .postform {
+    height: 200px;
+    margin: auto;
+    text-align: center;
+  }
+  .new-post input {
+    width: 100%;
+  }
+  .new-post input:nth-child(2) {
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .socialmedia_icon {
+    display: none;
+  }
+  .comment_review {
+    display: none;
+  }
+  .singlepost {
+    width: 100%;
+  }
+  .Inputform {
+    display: none;
+  }
+  .show {
+    visibility: visible;
+    cursor: pointer;
+  }
+}
